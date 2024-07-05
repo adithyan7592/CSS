@@ -1,0 +1,12 @@
+h1{
+    color: blue;
+}
+#a1{
+    color: brown;
+}
+.a2{
+    color: blueviolet;
+}
+#a1,.a2,h1{
+    background-color: bisque;
+}
