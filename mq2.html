@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+
+     .column{
+        float: left;
+        width: 25%;
+
+     }
+     .column h1{
+        font-family: cursive;
+        color: rgba(255, 0, 255, 0.404);
+     }
+
+     @media screen and (max-width:992px) {
+        .column{
+            width: 50%;
+        }
+        
+     }
+     @media screen and (max-width:600px) {
+        .column{
+            width: 100%;
+        }
+        
+     }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column" style="background-color: aliceblue;">
+           <h1> coloum1</h1>
+           <p>some text</p>
+        </div>
+        <div class="column" style="background-color: antiquewhite;">
+        <h1> coloumn2</h1>
+        <p>some text</p>
+        </div>
+        <div class="column" style="background-color: burlywood;">
+        <h1>column3</h1>
+        <p>some text</p>
+        </div>
+        <div class="column" style="background-color: cornflowerblue;">
+        <h1>column4</h1>
+        <p>some text</p>
+        </div>
+    </div>
+</body>
+</html>
