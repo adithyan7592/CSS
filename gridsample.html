@@ -13,14 +13,13 @@
         .buttons{grid-area:button;}
         .main{
             display: grid;
-            grid-template-areas: 'head head head head head head'
-            'nav nav nav nav nav nav'
-            'sub sub sub sub sub sub'
-            'msg msg msg msg msg msg'
-            'img img img img img img'
-            'button button button button button button';
+            grid-template-areas: 'head head head head nav nav'
+            'sub sub sub sub img img'
+             'sub sub sub sub img img'
+            'msg msg msg msg img img'
+            'button button button button img img';
             background-color: rgb(2, 6, 46);
-            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-rows: 60px 80px 100px 100px;
         }
         .head{
             background-color: rgb(9, 56, 9);
@@ -84,11 +83,18 @@
             width: 100%;
             background-color: greenyellow;
         }
-        @media screen and (max-width:700px){
-            .main .head .nav .sub .img .msg.buttons{
-                flex-direction: column;
+        @media screen and (max-width:600px){
+            .main{
+                grid-template-areas: 'head head head head'
+            'nav nav nav nav'
+            'sub sub sub sub'
+            'msg msg msg msg'
+            'img img img img '
+            'button button button button';
+            background-color: rgb(2, 6, 46);
+            grid-template-rows: 50px 100px 200px 300px 350px 150px;
             }
-            
+         
         }
 </style>
 </head>
